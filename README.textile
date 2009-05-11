@@ -1,3 +1,9 @@
+h2. USAGE:
+
+<pre>
+  <code>remarkable_plugin acts_as_et</code>
+</pre>
+
 h2. LICENSE:
 
 (The MIT License)
