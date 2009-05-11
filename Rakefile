@@ -17,8 +17,9 @@ spec = Gem::Specification.new do |s|
   s.version = GEM_VERSION
   s.platform = Gem::Platform::RUBY
   s.summary = SUMMARY
-  s.require_paths = ['lib']
-  s.files = FileList['lib/**/*.rb' '[A-Z]*'].to_a
+  s.require_paths = ['app_generators', 'bin', 'lib']
+  s.files = FileList['app_generators/**/*', 'bin/*', 'lib/**/*.rb', '[A-Z]*'].to_a
+  s.executables = ["remarkable_plugin"]
   
   s.author = AUTHOR
   s.email = EMAIL

@@ -29,10 +29,10 @@ class RemarkablePluginGenerator < RubiGen::Base
       
       m.template "lib/en.yml", "lib/en.yml"
       m.template "lib/pt.yml", "lib/pt.yml"
-      m.template "remarkable_you_name_it.rb", "remarkable_#{@name}.rb"
+      m.template "lib/remarkable_you_name_it.rb", "lib/remarkable_#{@name}.rb"
       
-      m.template "remarkable_you_name_it_spec.rb", "spec/remarkable_#{@name}_spec.rb"
-      m.template "spec_helper.rb", "spec_helper.rb"
+      m.template "spec/remarkable_you_name_it_spec.rb", "spec/remarkable_#{@name}_spec.rb"
+      m.template "spec/spec_helper.rb", "spec/spec_helper.rb"
       
       m.file "spec/model_builder.rb", "spec/model_builder.rb" 
     end
